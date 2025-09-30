@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceder a un ID</title>
+    
+</head>
+<body>
+
+    <h1 id="titulo">Titulo de la página </h1>
+    <p id="parrafo">Este es un párrafo con un ID único.</p>
+
+    <script> // Para modificar el titulo el script va dentro del body, debido a que primero tiene que cargar el contenido antes de modificiarlo
+        document.getElementById("titulo").innerHTML = "Nuevo Título de la página modificado con JavaScript"; // Cambia el contenido del elemento con ID "titulo"
+
+        document.getElementById("parrafo").style.color = "blue"; // Cambia el color del texto del elemento con ID "parrafo" a azul
+        document.getElementById("parrafo").style.fontSize = "20px"; // Cambia el tamaño de la fuente del elemento con ID "parrafo" a 20 píxeles
+
+    </script>
+    
+</body>
+</html>
